@@ -38,7 +38,7 @@ if ret != 0:
 print(SERVER)
 #Create the socket
 server=socket.socket(socket.AddressFamily.AF_INET,socket.SOCK_STREAM)
-ADDR=(SERVER,PORT)
+ADDR=('',PORT)
 server.bind(ADDR)
 #Function to process the message received
 def process_message(message):
